@@ -63,9 +63,9 @@
 </div>
 
 <div>
-    <input type="number" id="input1" placeholder="Enter X number">
-    <input type="number" id="input2" placeholder="Enter Y number">
-    <input type="number" id="input3" placeholder="Enter Z number">
+    <input type="number" id="xinput" placeholder="Enter X number">
+    <input type="number" id="yinput" placeholder="Enter Y number">
+    <input type="number" id="zinput" placeholder="Enter Z number">
 
     <button onclick="calculate()">Calculate</button>
     <p id="result"></p>
@@ -73,13 +73,15 @@
     <script>
     function calculate() {
 
-      const input1 = parseInt(document.getElementById("input1").value);
-      const input2 = parseInt(document.getElementById("input2").value);
-      const input3 = parseInt(document.getElementById("input3").value);
+      const xinput = parseInt(document.getElementById("xinput").value);
+      const yinput = parseInt(document.getElementById("yinput").value);
+      const zinput = parseInt(document.getElementById("zinput").value);
 
-      const combinedNumber = input1 + input2 + input3;
+      const value1 = 2 * xinput + 11;
+      const value2 = (2 * zinput + yinput) - 5;
+      const value3 = (yinput + zinput) - xinput;
 
-      document.getElementById("result").textContent = "Combined Number: " + combinedNumber;
+      document.getElementById("result").textContent = "Number to Imput: " + value1 + value2 + value3;
     }
   </script> 
 </div>
