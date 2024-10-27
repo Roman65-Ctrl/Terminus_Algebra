@@ -63,9 +63,9 @@
 </div>
 
 <div>
-    <input type="number" id="input1" placeholder="Enter number 1">
-    <input type="number" id="input1" placeholder="Enter number 2">
-    <input type="number" id="input1" placeholder="Enter number 3">
+    <input type="number" id="input1" placeholder="Enter X number">
+    <input type="number" id="input2" placeholder="Enter Y number">
+    <input type="number" id="input3" placeholder="Enter Z number">
 
     <button onclick="calculate()">Calculate</button>
     <p id="result"></p>
@@ -77,12 +77,13 @@
       const input2 = parseInt(document.getElementById("input2").value);
       const input3 = parseInt(document.getElementById("input3").value);
 
-      const combinedNumber = input1 * 100 + input2 * 10 + input3;
+      const combinedNumber = input1 + input2 + input3;
 
       document.getElementById("result").textContent = "Combined Number: " + combinedNumber;
     }
   </script> 
 </div>
+
 
 
 </body>
